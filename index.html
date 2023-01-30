@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/548cd5a76e.js" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/favicon_io/site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <title>Orientation Registration</title>
+</head>
+<body>
+  <!-- form  container-->
+  <div class="container">
+    <div class="header">
+      <div><img src="/IMG-20230117-WA0026.jpg" alt="" width="50"></div>
+     <div> <h3 >NACOS Bootcamp Registration</h3></div>
+     <div><img src="/IMG-20230130-WA0170.jpg" alt="" width="50"></div>
+    </div>
+    <!-- form -->
+    <form action="" id="form" class="form">
+      <!-- input container -->
+      <div class="form-control">
+        <label> Full Name <span class="important">*</span></label>
+        <input type="text" placeholder="John Doe" id="name" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small></small>
+      </div>
+      
+      <div class="form-control">
+        <label>Email <span class="important">*</span></label>
+        <input type="text" placeholder="example@email.com" id="email" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error</small>
+      </div>
+      <div class="form-control">
+      <label>Phone Number <span class="important">*</span></label>
+      <input type="text" placeholder="e.g 07083673658" id="phone-number" />
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error</small>
+    </div>
+     
+      
+    <div class="radio-control gender">
+      <label>Gender <span class="important">*</span></label>
+      <input type="radio" name="gender" id="male" value=""><span class="radio-label">Male</span>   
+      <input type="radio" name="gender" id="female" value=""><span class="radio-label">Female</span>
+      <small class="radio-error"></small>
+    </div>
+
+ <div class="form-control">
+  <label>Skill to learn</label>
+  <select name="skills" id="skills">
+    <option value=""></option>
+    <option value="Web development">Web development</option>
+    <option value="App development">App development</option>
+    <option value="Data science">Data science</option>
+    <option value="Product design">Product design</option>
+    <option value="Video editing/Motion graphics">Video editing/Motion graphics</option>
+  </select>
+  <i class="fas fa-check-circle"></i>
+  <i class="fas fa-exclamation-circle"></i>
+  <small>Error</small>
+ </div>
+<!-- button -->
+      <button>Register</button>
+    </form>
+    <!-- link to js, edit the src path if form isn't working -->
+<script src="/script.js"></script>
+</body>
+</html>
