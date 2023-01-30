@@ -7,7 +7,7 @@ function checkInput() {
   const nameValue = name.value.trim();
   const emailValue = email.value.trim();
   const phoneNoValue = phoneNo.value.trim();
-
+  const skillsValue = skills.value.trim()
   //  validation for name
   if (nameValue === "") {
     errorMsg(name, "Name cannot be empty");
@@ -32,6 +32,7 @@ function checkInput() {
   } else {
     success(phoneNo);
   }   
+
   
 
 }
