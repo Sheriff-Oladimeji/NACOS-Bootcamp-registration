@@ -37,7 +37,7 @@ function checkInput() {
     success(phoneNo);
   }   
 if(skillsValue === ""){
-  errorMsg(skills, "Please select a value")
+  errorMsg(skills, "Please select a skill")
 }
 else{
   success(skills)
