@@ -212,7 +212,7 @@ label {
   display: inline-block;
 }
 .form-control input {
-  border: 3px solid var(--primary);
+  border: 2.5px solid var(--primary);
   display: block;
   width: 100%;
   padding: 10px;
@@ -291,13 +291,13 @@ input {
 }
 #skills {
   width: 100%;
-  border: 3px solid var(--primary);
+  border: 2.5px solid var(--primary);
 }
 .form-control.success #skills{
-  border: 3px solid  #2ecc71;
+  border: 2.5px solid  #2ecc71;
 }
 .form-control.error #skills {
-  border: 3px solid  #e74c3c;
+  border: 2.5px solid  #e74c3c;
 }
 .radio-control {
   width: 100%;
