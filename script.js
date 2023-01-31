@@ -42,6 +42,12 @@ if(skillsValue === ""){
 else{
   success(skills)
 }
+var option = document.getElementsByName('gender');
+     
+if (!(option[0].checked || option[1].checked)) {
+    document.getElementsByClassName("radio-error").innerText = "Please Select Your Gender";
+    return false;
+}
 
 }
 
