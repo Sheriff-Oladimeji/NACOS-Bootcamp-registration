@@ -212,7 +212,7 @@ label {
   display: inline-block;
 }
 .form-control input {
-  border: 2px solid var(--primary);
+  border: 3px solid var(--primary);
   display: block;
   width: 100%;
   padding: 10px;
@@ -235,7 +235,7 @@ label {
 }
 .form button {
   background-color: rgb(56, 219, 56);
-  /* border:2px solid  var(--primary); */
+  
   border: none;
   color: #fff;
   display: block;
@@ -245,10 +245,12 @@ label {
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
+  outline: none;
 }
 .form-control.success input {
   border-color: #2ecc71;
 }
+
 .form-control.error input {
   border-color: #e74c3c;
 }
@@ -269,6 +271,7 @@ select {
   padding: 10px 15px;
   outline: none;
   border-radius: 5px;
+  
 }
 .radios {
   display: flex;
@@ -286,27 +289,22 @@ select {
 input {
   cursor: pointer;
 }
-#departments {
+#skills {
   width: 100%;
-  border: 2px solid var(--primary);
+  border: 3px solid var(--primary);
 }
 .radio-control {
   width: 100%;
   margin-bottom: 20px;
 }
-#no,
+
 #female {
   margin-left: 20px;
 }
 .radio-label {
   margin-left: 5px;
 }
-textarea {
-  width: 100%;
-  outline: none;
-  height: 60px;
-  border: 2px solid var(--primary);
-}
+
 .radio-error{
   color: #e74c3c;
   display: block;

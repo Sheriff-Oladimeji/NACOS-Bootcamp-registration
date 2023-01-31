@@ -2,7 +2,7 @@ const form = document.querySelector("#form");
 const name = document.querySelector("#name");
 const phoneNo = document.querySelector("#phone-number");
 const email = document.querySelector("#email");
-const skills = documentb.querySelector('#Skills')
+const skills = document.querySelector('#skills')
 function checkInput() {
   const nameValue = name.value.trim();
   const emailValue = email.value.trim();
@@ -29,7 +29,11 @@ function checkInput() {
     errorMsg(phoneNo, "Phone Number can't be empty");
   } else if (isNaN(phoneNoValue)) {
     errorMsg(phoneNo, "Not a valid Phone Number");
-  } else {
+  } 
+  else if(phoneNoValue.length < 11 || phoneNoValue.length > 11){
+    errorMsg(phoneNo, "Must be equal to eleven digits")
+  }
+  else {
     success(phoneNo);
   }   
 if(skillsValue === ""){
