@@ -37,12 +37,13 @@ function checkInput() {
     success(phoneNo);
   }   
 if(skillsValue === ""){
-  errorMsg(skills, "Please select a skill")
+  errorMsg(skills, "Please select a value")
 }
 else{
   success(skills)
 }
-​}
+
+}
 
 function errorMsg(input, value) {
   const formControl = input.parentElement;
