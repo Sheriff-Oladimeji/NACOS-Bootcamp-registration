@@ -42,13 +42,17 @@ if(skillsValue === ""){
 else{
   success(skills)
 }
-var option = document.getElementsByName('gender');
-     
-if (!(option[0].checked || option[1].checked)) {
-    document.getElementsByClassName("radio-error").innerText = "Please Select Your Gender";
-    return false;
-}
+validateGender()
 
+}
+function validateGender(){
+  let gender = document.getElementsByName('gender')
+for(let i = 0; i< gender.length; i++){
+if ( ( gender[0].checked == false ) && (gender[1].checked == false ) )
+{
+document.getElementsByClassName('radio-error').innerText =  "Please choose your Gender: Male or Female" ;
+}
+}
 }
 
 function errorMsg(input, value) {
