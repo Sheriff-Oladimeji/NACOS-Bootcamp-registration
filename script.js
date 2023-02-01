@@ -51,7 +51,7 @@ if(skillsValue === ""){
 else{
   success(skills)
 }
-validateGender()
+validateRadio()
 
 }
 function validateGender(){
@@ -79,8 +79,21 @@ function isEmail(email) {
   return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
 }
 
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   checkInput();
 });
+function validateRadio(){
+  const radio = document.getElementsByName('gender')
+  const radioError =  document.querySelector('.radio-error')
+for(let i = 0; i<radio.length; i++){
+  
+  if(radio[i].checked ===false){
+   radioError.innerText = "select a value"
+  }
+  else{
+radioError.innerText = ""
+  }
+}
+
+}
