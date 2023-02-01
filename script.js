@@ -1,10 +1,12 @@
 const form = document.querySelector("#form");
 const name = document.querySelector("#name");
+const lastName = document.querySelector('#last-name')
 const phoneNo = document.querySelector("#phone-number");
 const email = document.querySelector("#email");
 const skills = document.querySelector('#skills')
 function checkInput() {
   const nameValue = name.value.trim();
+  const lastNameValue = lastName.value.trim()
   const emailValue = email.value.trim();
   const phoneNoValue = phoneNo.value.trim();
   const skillsValue = skills.value.trim()
@@ -15,6 +17,13 @@ function checkInput() {
     errorMsg(name, "Atleast three characters");
   } else {
     success(name);
+  }
+  if (lastNameValue === "") {
+    errorMsg(lastName, "Last name cannot be empty");
+  } else if (lastNameValue.length < 3) {
+    errorMsg(lastName, "Atleast three characters");
+  } else {
+    success(lastName);
   }
   // email validation
   if (emailValue === "") {
