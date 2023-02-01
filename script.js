@@ -54,15 +54,6 @@ else{
 validateRadio()
 
 }
-function validateGender(){
-  let gender = document.getElementsByName('gender')
-for(let i = 0; i< gender.length; i++){
-if ( ( gender[0].checked == false ) && (gender[1].checked == false ) )
-{
-document.getElementsByClassName('radio-error').innerText =  "Please choose your Gender: Male or Female" ;
-}
-}
-}
 
 function errorMsg(input, value) {
   const formControl = input.parentElement;
