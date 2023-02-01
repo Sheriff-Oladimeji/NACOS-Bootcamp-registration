@@ -42,6 +42,9 @@ function checkInput() {
   else if(phoneNoValue.length < 11 || phoneNoValue.length > 11){
     errorMsg(phoneNo, "Must be equal to eleven digits")
   }
+  else if(phoneNoValue.charAt(0) !== "0"){
+errorMsg(phoneNo, "Not a valid phone Number")
+  }
   else {
     success(phoneNo);
   }   
