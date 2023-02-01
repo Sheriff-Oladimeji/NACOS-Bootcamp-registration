@@ -89,7 +89,7 @@ function validateRadio(){
 for(let i = 0; i<radio.length; i++){
   
   if(radio[i].checked ===false){
-   radioError.innerText = "select a value"
+   radioError.innerText = "select a gender"
   }
   else{
 radioError.innerText = ""
