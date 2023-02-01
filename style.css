@@ -182,6 +182,7 @@ body {
   width: 500px;
   overflow: hidden;
   min-height: 100vh;
+  overflow-y: scroll;
 }
 .header {
   background-color: #f7f7f7;
